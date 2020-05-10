@@ -2,8 +2,8 @@
 //----------------------------- CG PROJETO FINAL 2019 - SHOPPING -----------------------------
 
 //Trabalho Realizado Por:
-//							AndrÈ Leite,
-//							Sara In·cio, 2015240471
+//							Andr√© Leite, 2015250489
+//							Sara In√°cio,
 
 //--------------------------------------------------------------------------------------------
 
@@ -36,12 +36,12 @@
 #define PRETO    0.0, 0.0, 0.0, 1.0
 #define UMVERDE  0.38, 0.27, 0.25, 1.0
 
-//----------  VARI¡VEIS ----------
+//----------  VARI√ÅVEIS ----------
 int width, height, nrChannels;
 unsigned char *data = stbi_load("container.jpg", &width, &height, &nrChannels, 0);
 
 
-//----------  VARI¡VEIS FONTE ----------
+//----------  VARI√ÅVEIS FONTE ----------
 //LADO DIREITO
 float sx1 = 0.0, sy1 = 0.0;
 float x2 = 0.0, y2 = 0.0;
@@ -164,7 +164,7 @@ GLfloat matDifusa[]   = {0.6, 0.6, 0.6, 1.0};
 GLfloat matEspecular[]= {0.2, 0.2, 0.2, 1.0};
 GLint   especMaterial = 10;
 
-//----------  V…RTICES E DEFINI«’ES ----------
+//----------  V√âRTICES E DEFINI√á√ïES ----------
 int verticesESC= 3*53;
 static GLuint poligono_0[] = {1,1,1,1};
 static GLuint poligono_1[] = {1,1,1,1};
@@ -583,7 +583,7 @@ GLfloat qaLightPosition3[]    = {0, 15, 5, 1};
 
 
 
-//---------- INICIALIZA«√O LUZ ----------
+//---------- INICIALIZA√á√ÉO LUZ ----------
 void initLights(void)
 {
     glEnable(GL_LIGHTING);
@@ -692,7 +692,7 @@ void door()
 
 }
 
-//SINAL SAÕDA
+//SINAL SA√çDA
 void exit_sign()
 {
 	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
@@ -734,7 +734,7 @@ void draw_glass(){
 }
 
 
-//CORRIM√O ESCADAS
+//CORRIM√ÉO ESCADAS
 void drawCorrimao()
 {
 	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
@@ -843,7 +843,7 @@ void drawCorrimao()
 
 }
 
-//CH√O
+//CH√ÉO
 void drawChao()
 {
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Chao y=0
@@ -1131,7 +1131,7 @@ void drawTeto()
 
 }
 
-//C…U
+//C√âU
 void drawSky()
 {
 	glEnable(GL_TEXTURE_2D);
@@ -1940,7 +1940,7 @@ void makeFountain()
 	glPushMatrix();
 		glTranslatef(0.0, -0.5 , 12.5);
 	    glScalef(2, 0.1, 2);	//Escala
-		glutSolidCube(1);				//Cria o paralelipÌpedo
+		glutSolidCube(1);				//Cria o paralelip√≠pedo
 	glPopMatrix();
 
     GLUquadricObj *quadratic;
@@ -2666,7 +2666,7 @@ void initTexturas(){
 
 }
 
-//---------- INICIALIZA«√O PROGRAMA ----------
+//---------- INICIALIZA√á√ÉO PROGRAMA ----------
 void init(void) {
 
 	glClearColor(WHITE);
